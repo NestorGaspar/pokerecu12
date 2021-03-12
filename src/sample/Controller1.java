@@ -90,6 +90,8 @@ public class Controller1 {
     @FXML
     private ImageView image6;
     @FXML
+    private Button Detalles;
+    @FXML
     private Button Mochila;
     @FXML
     private Button Salir;
@@ -114,7 +116,7 @@ public class Controller1 {
         Binder.bind(pokemon4, labelNombre4, labelNivel4, labelVida4, progressbar4, image4);
         Binder.bind(pokemon5, labelNombre5, labelNivel5, labelVida5, progressbar5, image5);
         Binder.bind(pokemon6, labelNombre6, labelNivel6, labelVida6, progressbar6, image6);
-
+        Detalles.setDisable(true);
         Salir.setDisable(false);
         Mochila.setDisable(true);
     }
@@ -126,6 +128,7 @@ public class Controller1 {
         nombre.setTextFill(Color.BLACK);
         nivel.setTextFill(Color.BLACK);
         vida.setTextFill(Color.BLACK);
+        Detalles.setDisable(false);
         Mochila.setDisable(false);
         Salir.setDisable(false);
         Mochila.setText("Mochila");
@@ -137,6 +140,7 @@ public class Controller1 {
         nombre.setTextFill(Color.WHITE);
         nivel.setTextFill(Color.WHITE);
         vida.setTextFill(Color.WHITE);
+        Detalles.setDisable(true);
         Salir.setDisable(false);
         Mochila.setDisable(true);
         Mochila.setText("Siguiente");
@@ -209,6 +213,22 @@ public class Controller1 {
             stage.show();
 
             Controller2 controller = loader.getController();
+            controller.setVentana1(this);
+        } catch(Exception e) {
+            e.printStackTrace();
+        }
+    }
+    @FXML
+    private void onButtonNextClicked1(MouseEvent event) {
+        try {
+            Stage stage = new Stage();
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("sample3.fxml"));
+            GridPane root = (GridPane) loader.load();
+            Scene scene = new Scene(root,650,450);
+            stage.setScene(scene);
+            stage.show();
+
+            Controller3 controller = loader.getController();
             controller.setVentana1(this);
         } catch(Exception e) {
             e.printStackTrace();

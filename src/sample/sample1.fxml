@@ -59,18 +59,24 @@
                         <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                     </columnConstraints>
                     <rowConstraints>
-                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                     </rowConstraints>
                     <children>
-                        <Label fx:id="labelVida1" textFill="WHITE" GridPane.columnIndex="0" GridPane.halignment="LEFT">
+                        <Label fx:id="labelVida1" textFill="WHITE" GridPane.halignment="LEFT" GridPane.rowIndex="1">
                             <font>
                                 <Font name="Sylfaen" size="18.0" />
                             </font>
                         </Label>
-                        <ImageView fx:id="tick1" fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="RIGHT">
+                        <ImageView fx:id="tick1" fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="1">
                             <image>
                                 <Image url="@../img/tick.png" />
                             </image></ImageView>
+                  <ImageView fitHeight="52.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <image>
+                        <Image url="@../img/estrella.png" />
+                     </image>
+                  </ImageView>
                     </children>
                     <padding>
                         <Insets bottom="10.0" left="30.0" right="30.0" />
@@ -147,6 +153,11 @@
                             <image>
                                 <Image url="@../img/tick.png" />
                             </image></ImageView>
+                  <ImageView fitHeight="52.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.columnIndex="1">
+                     <image>
+                        <Image url="@../img/estrella.png" />
+                     </image>
+                  </ImageView>
                     </children>
                     <padding>
                         <Insets bottom="10.0" left="30.0" right="30.0" />
@@ -223,6 +234,11 @@
                             <image>
                                 <Image url="@../img/tick.png" />
                             </image></ImageView>
+                  <ImageView fitHeight="52.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.columnIndex="1">
+                     <image>
+                        <Image url="@../img/estrella.png" />
+                     </image>
+                  </ImageView>
                     </children>
                     <padding>
                         <Insets bottom="10.0" left="30.0" right="30.0" />
@@ -299,6 +315,11 @@
                             <image>
                                 <Image url="@../img/tick.png" />
                             </image></ImageView>
+                  <ImageView fitHeight="52.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.columnIndex="1">
+                     <image>
+                        <Image url="@../img/estrella.png" />
+                     </image>
+                  </ImageView>
                     </children>
                     <padding>
                         <Insets bottom="10.0" left="30.0" right="30.0" />
@@ -375,6 +396,11 @@
                             <image>
                                 <Image url="@../img/tick.png" />
                             </image></ImageView>
+                  <ImageView fitHeight="52.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.columnIndex="1">
+                     <image>
+                        <Image url="@../img/estrella.png" />
+                     </image>
+                  </ImageView>
                     </children>
                     <padding>
                         <Insets bottom="10.0" left="30.0" right="30.0" />
@@ -451,6 +477,11 @@
                             <image>
                                 <Image url="@../img/tick.png" />
                             </image></ImageView>
+                  <ImageView fitHeight="52.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.columnIndex="1">
+                     <image>
+                        <Image url="@../img/estrella.png" />
+                     </image>
+                  </ImageView>
                     </children>
                     <padding>
                         <Insets bottom="10.0" left="30.0" right="30.0" />
@@ -474,6 +505,14 @@
                 <RowConstraints maxHeight="50.0" minHeight="50.0" prefHeight="30.0" vgrow="SOMETIMES" />
             </rowConstraints>
             <children>
+            <Button fx:id="Detalles" disable="true" mnemonicParsing="false" onMouseClicked="#onButtonNextClicked1" style="-fx-border-color: black; -fx-background-color: #72E874; -fx-border-radius: 5;" text="Detalles" GridPane.columnIndex="1">
+               <GridPane.margin>
+                  <Insets left="60.0" right="20.0" />
+               </GridPane.margin>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
                 <Button fx:id="Mochila" alignment="CENTER_RIGHT" contentDisplay="RIGHT" disable="true" mnemonicParsing="false" onMouseClicked="#onButtonNextClicked" style="-fx-background-color: #72E874; -fx-border-color: #000000; -fx-border-radius: 5;" text="Siguiente" GridPane.columnIndex="0" GridPane.halignment="RIGHT">
                     <font>
                         <Font name="Sylfaen" size="18.0" />
